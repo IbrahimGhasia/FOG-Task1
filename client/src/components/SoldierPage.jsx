@@ -10,7 +10,7 @@ const SoldierPage = () => {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(
-					"http://localhost:3000/api/soldier"
+					"https://fog-task1.vercel.app/api/soldier"
 				);
 				const data = await response.json();
 				setSoldierData(data.data[0]);
